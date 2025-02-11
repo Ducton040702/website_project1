@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #00209F 50%, #D21034 50%);
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(247, 10, 10, 0.8);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #fdd835;
+    color: black;
+}
+
+/* Header Styling */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Buttons */
+.action-button {
+    background-color: #fdd835;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #ffd600;
+}
+
+/* Light/Dark Mode */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .action-button {
+    background-color: grey;
+}
+
+/* Form Styling */
+.error {
+    border: 2px solid red;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.left {
+    width: 45%;
+    text-align: left;
+}
+
+.right {
+    width: 45%;
+}
+
+/* Modal styles */
+.modal {
+    display: none
+}
+
+/* Fade Section Animation */
+.fade-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modal Animation */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgb(7, 236, 179);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: bottom;
+    max-width: 500px;
+    width: 90%;
+    color:black;
+}
+
+#modal-image {
+    max-width: 100px;
+    transition: transform 0.1s ease;
+}
+.responsive-image {
+    width: 600px;     /* Fixed width */
+    height: 300px;    /* Fixed height */
+    max-width: 100%;  /* Responsive: never wider than container */
+    object-fit: cover; /* Maintains aspect ratio */
+}

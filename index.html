@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Haitian Community Support Page</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#find-wifi">Find WiFi</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header-container">
+        <div class="header-item">
+            <h1>Welcome to Haitian Community Support</h1>
+        </div>
+        <div class="header-item">
+            <p>Your contributions can make a difference!</p>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <!-- Home Section -->
+<section id="home" class="fade-section">
+    <h2>Home</h2>
+    <button class="action-button">Get Involved</button>
+    <button class="action-button">Donate Now</button>
+    <div class="image-container">
+        <img src="./img/haitian.flag1.jpg" alt="Haitian Community Image" class="responsive-image">
+        <img src="./img/haitian.flag2.jpg" alt="Haitian Culture Image" class="responsive-image">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-section">
+        <h2>About the Haitian Community</h2>
+        <p>This website supports the Haitian community through various initiatives.</p>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="fade-section">
+        <h2>Our Impact</h2>
+        <p>The Haitian community embodies resilience and strength, yet faces persistent challenges such as limited access to education, healthcare, and economic opportunities. Addressing these issues through initiatives that promote entrepreneurship, youth education, and disaster preparedness can empower the community and foster sustainable growth. By amplifying Haitian voices and investing in their future, we honor their rich culture and create pathways for lasting progress and equity.</p>
+    </section>
+
+    <!-- Find WiFi Section -->
+    <section id="find-wifi" class="fade-section">
+        <h2> Support </h2>
+        <p>Supporting the Haitian community requires a commitment to addressing systemic barriers and empowering individuals to create meaningful change. Investments in education can equip youth with the skills needed to thrive in a global economy, while healthcare initiatives can improve overall well-being and resilience against crises. Promoting entrepreneurship and job creation provides pathways to economic stability and independence. Additionally, strengthening disaster preparedness and infrastructure can mitigate the impact of natural disasters, which disproportionately affect vulnerable populations. By working collaboratively with Haitian-led organizations and leveraging community-driven solutions, we can provide the tools and resources needed to foster sustainable development and uplift the Haitian community.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-section">
+        <h2>Contact Us</h2>
+        <p>If you have questions, feel free to reach out!</p>
+    </section>
+
+    <!-- Toggle Light/Dark Mode Button -->
+    <button id="toggleMode" class="action-button">Toggle Dark Mode</button>
+
+    <!-- Main Container for Call to Action and Petition Form -->
+    <div class="container">
+        <!-- Call to Action Section -->
+        <div class="left">
+            <p id="callToAction">Your support can make a huge impact on the Haitian community. Please sign our petition!</p>
+        </div>
+
+        <!-- Signatures Section -->
+        <div class="right">
+            <h2>Signatures</h2>
+            <div id="supportColumn"></div>
+        </div>
+    </div>
+
+    <!-- Petition Form -->
+    <form id="sign-petition">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="hometown" placeholder="Hometown" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="button" id="signNowButton">Sign Now</button>
+    </form>
+
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+        <div class="modal-content">
+            <p id="thanks-modal-content" class="modal-text"></p>
+            <img id="modal-image" src="/img/thumbs.up.jpg" alt="Image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Haitian Community Support</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
